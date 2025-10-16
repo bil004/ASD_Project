@@ -1,0 +1,10 @@
+# File da ignorare
+*.o
+*.exe
+*.jargi
+*.json
+
+# Cartelle da ignorare
+bin/
+files/
+.vscode/
