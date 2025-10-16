@@ -2,7 +2,7 @@
 
 # Informazioni preliminari
 
-Questa repo contiene il progetto di ASD dell'anno accademico 2024/25
+Repository contenente il progetto di Algoritmi e Strutture Dati dell'anno accademico 2024/25.
 
 
 
@@ -72,17 +72,6 @@ Si misurino i tempi di risposta per i due algoritmi, per ciascuno dei tre field 
 
 **Si ricorda che il file `records.csv` (e i file compilati) NON DEVONO ESSERE OGGETTO DI COMMIT SU GIT!**
 
-### Condizioni per la consegna:
-
-- Creare una sottocartella chiamata `ex1` all'interno del repository.
-- La consegna deve obbligatoriamente contenere un `Makefile`. Questo file con il comando `make all` deve produrre all'interno di `ex1/bin` due file eseguibili chiamati `main_ex1` e `test_ex1`. Se avete usato librerie esterne (come Unity) includete anche queste per consentire la corretta compilazione.
-- L'eseguibile `test_ex1` non deve richiedere nessun parametro e deve eseguire tutti gli unit test automatizzati prodotti.
-- L'eseguibile `main_ex1` deve ricevere come parametri il percorso del file CSV contenente i record da ordinare, il percorso del file in cui salvare i record ordinati, il valore del campo `field` da utilizzare per l'ordinamento, e l'indicazione dell'algoritmo da utilizzare. Per esempio:
-
-```
-$ ./main_ex1 /tmp/data/records.csv /tmp/data/sorted.csv 1 2
-```
-
 
 ## Esercizio 2 - Edit distance
 
@@ -144,17 +133,6 @@ Si implementi un'applicazione che usa la funzione `edit_distance_dyn` per determ
 
 **Si ricorda** che i file `dictionary.txt` e `correctme.txt` non devono essere oggetto di commit su git!
 
-### Condizioni per la consegna:
-
-- Creare una sottocartella chiamata `ex2` all'interno del repository.
-- La consegna deve obbligatoriamente contenere un `Makefile`. Questo file con il comando `make all` deve produrre all'interno di `ex2/bin` due file eseguibili chiamati `main_ex2` e `test_ex2`. Se avete usato librerie esterne (come Unity) includete anche queste per consentire la corretta compilazione.
-- L'eseguibile `test_ex2` non deve richiedere nessun parametro e deve eseguire tutti gli unit test automatizzati prodotti.
-- L'eseguibile `main_ex2` deve ricevere come parametri il percorso del dizionario da usare come riferimento e il file da correggere. Per esempio:
-
-```
-$ ./main_ex2 /tmp/data/dictionary.txt /tmp/data/correctme.txt
-```
-
 
 ## Esercizio 3 - Tavole hash (con concatenamento)
 
@@ -199,18 +177,6 @@ Si richiede che per implementare quanto richiesto dal presente esercizio ci si a
 E' possibile che il processo di sviluppo risulti iterativo, comportando varie interazioni con il sistema LLM.
 
 Si documenti, in una relazione (README.md su git), il suddetto processo di sviluppo nei suoi aspetti principali (prompt iniziale, output prodotto dal sistema, analisi critica dell'output, raffinamento del prompt, ecc.) e si riportino alcune considerazioni generali sull'intero processo.
-
-### Condizioni per la consegna:
-
-- Creare una sottocartella chiamata `ex3` all'interno del repository.
-- La consegna deve obbligatoriamente contenere un `Makefile`. Questo file con il comando `make all` deve produrre all'interno di `ex3/bin` due file eseguibili chiamati `main_ex3` e `test_ex3`. Se avete usato librerie esterne (come Unity) includete anche queste per consentire la corretta compilazione.
-- L'eseguibile `test_ex3` non deve richiedere nessun parametro e deve eseguire tutti gli unit test automatizzati prodotti.
-- L'eseguibile `main_ex3` deve ricevere come parametri il percorso del file di testo da usare e la lunghezza minima delle parole da considerare. Per esempio:
-
-```
-$ ./main_ex3 /tmp/data/iliade.txt 6
-```
-
 
 ## Esercizio 4 - Grafi sparsi e Visita in Ampiezza
 
@@ -309,16 +275,3 @@ Ogni record contiene i seguenti dati:
 - Il file è stato creato a partire da un dataset poco accurato. I dati riportati contengono inesattezze e imprecisioni.
 
 **Si ricorda che il file `italian_dist_graph.csv` (e i file compilati) NON DEVONO ESSERE OGGETTO DI COMMIT SU GIT!**
-
-### Condizioni per la consegna:
-
-- Creare una sottocartella chiamata `ex3-4` all'interno del repository, che conterrà i file relativi a questo esercizio e al precedente.
-- Includete nella consegna anche un `Makefile` che con il comando `make all` deve produrre all'interno di `ex3-4/bin` due file eseguibili chiamati `main_ex3-4` e `test_ex3-4`. Se avete usato librerie esterne (come Unity) includete anche queste per consentire la corretta compilazione.
-- L'eseguibile `test_ex3-4` non deve richiedere nessun parametro e deve eseguire tutti gli unit test automatizzati prodotti.
-- L'eseguibile `main_ex3-4` deve ricevere come parametri il percorso del file `italian_dist_graph.csv`, il nome della città di partenza e il nome di un file di output, e salvare in quest'ultimo i nomi delle località visitate durante una visita in ampiezza del grafo, un nome per riga, partendo da un nodo di partenza specificato. I nomi dei file non devono essere hardcoded, ma devono essere passati come argomenti da linea di comando.
-
-```
-$ ./main_ex3-4 italian_dist_graph.csv torino output.txt
-```
-
-Si documenti brevemente, in una relazione (README.md su git), le scelte implementative effettuate e i risultati e tempi dell'esecuzione dell'algoritmo rispetto a quanto atteso.
