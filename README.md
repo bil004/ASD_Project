@@ -1,11 +1,5 @@
 # Algorithms and Data Structures
 
-# Informazioni preliminari
-
-Repository contenente il progetto di Algoritmi e Strutture Dati dell'anno accademico 2024/25.
-
-
-
 ## Esercizio 1 - Merge Sort e Quick Sort
 
 ### Testo
